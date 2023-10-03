@@ -7,7 +7,7 @@ const BreakingNews = () => {
             <button className="btn btn-secondary">
              Breaking News
             </button>
-            <Marquee pauseOnHover={true} speed={100}>
+            <Marquee pauseOnHover={true} speed={70}>
 <Link className="mr-12" to="/">  I can be a React component, multiple React components......</Link>
 <Link to="/">  I can be a React component, multiple React components......</Link>
 <Link to="/">  I can be a React component, multiple React components......</Link>
