@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Navbar from "../Shared/Navbar/Navbar";
 import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
@@ -6,6 +6,8 @@ import { AuthContext } from "../../Providers/AuthProvider";
 
 const Login = () => {
     const {signIn} = useContext(AuthContext);
+    const location = useLocation();
+    console.log('location in the login page', location);
 
     const handleLogin = e =>{
         e.preventDefault();
